@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Home</title>
+    <link rel="icon" type="image/x-icon" href="X-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="home" id="home">
+
+        <div class="container" id="container1">
+
+
+
+            <div class="menu">
+                <div class="logo">
+                    <img src="X-logo.jpg" alt="logo" class="X-logo" />
+                </div>
+                <div class="NavItoms">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="explore.html"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+                        </li>
+                        <li>
+                            <a href="notification.html"><i class="fa-solid fa-bell"></i>Notification</a>
+                        </li>
+                        <li>
+                            <a href="message.html"><i class="fa-regular fa-message"></i> Messages</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-pen-to-square"></i> Grok</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-list"></i>Lists</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-bookmark"></i>Bookmarks</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-user"></i>Communities</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i>Premium</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-comment-dots"></i> More</a>
+                        </li>
+                    </ul>
+                    <div class="post"><a href="#">Post</a>
+                    </div>
+                    <div class="profileB">
+                        <div class="dp">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFX7iyXhBPjvkOEygJ6z3n7tKVgVBEMHLW1YnsD9fXKYHiQagizHy_36vbXTE500aP8Ys&usqp=CAU"
+                                alt="" class="dp" onclick="logout()">
+                        </div>
+                        <div class="Username">
+                            <h3>Rohit</h3>
+                            <p>@me_rohit_b</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis-vertical" onclick="logout()" role="button"></i></span>
+                    </div>
+
+                </div>
+            </div>
+            <span class="logout" id="log">
+                <span> <a href="login.html">Add an existing account</a> </span>
+                <span> <a href="login.html">Logout</a></span>
+            </span>
+        </div>
+        <!-- ---------------------------------- -->
+
+
+        <div class="container" id="container2">
+            <div class="heading">
+                <div class="heading1">
+                    <h1 onclick="one()" role="button">For You</h1>
+                </div>
+                <div class="heading2">
+                    <h1 onclick="two()" role="button">Following</h1>
+                </div>
+                <span><i class="fa-solid fa-gear"></i></span>
+            </div>
+            <hr class="hori">
+            <div class="whatsHappening">
+                <div class="PostInput">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFX7iyXhBPjvkOEygJ6z3n7tKVgVBEMHLW1YnsD9fXKYHiQagizHy_36vbXTE500aP8Ys&usqp=CAU"
+                        alt="" class="postimg">
+                    <input type="text" placeholder="What is happening?!">
+
+                </div>
+                <div class="iconofpost">
+
+                    <div class="icons">
+                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-solid fa-gift"></i>
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-solid fa-calendar-week"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <button type="submit" class="postbtn">Post</button>
+                </div>
+                <br>
+                <hr class="hori">
+
+            </div>
+            <div id="one">
+                <div class="media">
+                    <div class="profileinfo">
+                        <img src="https://banner2.cleanpng.com/20180601/ecy/kisspng-2019-cricket-world-cup-2011-cricket-world-cup-icc-5b112a18b267e5.4857430115278515447308.jpg"
+                            alt="">
+                        <h1>ICC</h1>
+                        <a href="#"><i class="fa-solid fa-check-double"></i></a>
+                        <p>@ICC .</p>
+                        <p>50m</p>
+                    </div>
+                    <div class="mediainfo">
+                        <p>The Code of Conduct breach occurred during the fourth day of <a href="#">#INDvENG</a> first
+                            Test
+                            in Hyderabad 👀
+                            Details 👇</p>
+                    </div>
+                    <div class="profilecontent">
+                        <img src="boom-siraj.jfif" alt="">
+                    </div>
+                    <div class="likecomm">
+                        <a href=""><i class="fa-regular fa-comment" id="likect"></i>22</a>
+                        <a href=""><i class="fa-solid fa-retweet"></i>10</a>
+                        <a onclick="count()"><i class="fa-regular fa-heart" id="zz"></i><span id="xy">0</span></a>
+                        <a href=""><i class="fa-solid fa-chart-simple"></i>110k</a>
+                        <a href=""> <i class="fa-solid fa-arrow-up-from-bracket"></i>1k</a>
+                    </div>
+                </div>
+                <hr class="hori">
+
+                <div class="media">
+                    <div class="profileinfo">
+                        <img src="https://pbs.twimg.com/profile_images/1339019961310703616/hTE9WKSp_400x400.png" alt="">
+                        <h1>ABP माझा</h1>
+                        <a href="#"><i class="fa-solid fa-check-double"></i></a>
+                        <p>@abpmajhatv .</p>
+                        <p>45m</p>
+                    </div>
+                    <div class="mediainfo">
+                        <p>Pushpa 2 : 'पुष्पा 2'चं काऊंटडाउन सुरू! #Pushpa2
+                            <link rel="stylesheet"
+                                href="https://marathi.abplive.com/entertainment/bollywood/pushpa-2-the-rule-grand-release-worldwide-on-15th-aug-2024-200-days-for-pushpa-raj-to-begin-his-rule-know-bollywood-entertainment-latest-update-marathi-news-1251359">
+                            👇
+                        </p>
+                    </div>
+                    <div class="profilecontent">
+                        <img src="https://pbs.twimg.com/media/GFAYMgibsAAlPW0?format=jpg&name=medium" alt="">
+                    </div>
+                    <div class="likecomm">
+                        <a href=""><i class="fa-regular fa-comment"></i></a>
+                        <a href=""><i class="fa-solid fa-retweet"></i></a>
+                        <a href=""> <i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                        <a href=""> <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </div>
+                </div>
+                <hr class="hori">
+                <div class="media">
+                    <div class="profileinfo">
+                        <img src="https://pbs.twimg.com/profile_images/1658495824824000513/Yv-xgJrg_400x400.jpg" alt="">
+                        <h1>Royal Challegers Bangalore</h1>
+                        <a href="#"><i class="fa-solid fa-check-double"></i></a>
+                        <p>@RCBTweets .</p>
+                        <p>2hr</p>
+                    </div>
+                    <div class="mediainfo">
+                        <p>
+                            Ra-Pa Returns ➡️ Raring to go 🇮🇳💪
+
+                            Living the dream, Rajat looks forward to representing #TeamIndia 🌟
+
+                            #PlayBold #INDvENG #ನಮ್ಮRCB
+                        </p>
+                    </div>
+                    <div class="profilecontent">
+                        <img src="https://pbs.twimg.com/media/GFOlN3QbEAAckPN?format=jpg&name=medium" alt="">
+                    </div>
+                    <div class="likecomm">
+                        <a href=""><i class="fa-regular fa-comment"></i></a>
+                        <a href=""><i class="fa-solid fa-retweet"></i></a>
+                        <a href=""> <i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                        <a href=""> <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </div>
+                </div>
+                <hr class="hori">
+
+
+            </div>
+            <div id="two">
+
+                <hr class="hori">
+                <div class="media">
+                    <div class="profileinfo">
+                        <img src="https://pbs.twimg.com/profile_images/1559752542372122624/6UiH4Ubt_400x400.jpg" alt="">
+                        <h1>RVCj Media</h1>
+                        <a href="#"><i class="fa-solid fa-check-double"></i></a>
+                        <p>@RVCJ_FB .</p>
+                        <p>50m</p>
+                    </div>
+                    <div class="mediainfo">
+                        <p>Sirf Film me hota hai</p>
+                    </div>
+                    <div class="profilecontent">
+                        <img src="https://pbs.twimg.com/media/GFLuPl7WIAAcohq?format=jpg&name=medium" alt="">
+                    </div>
+                    <div class="likecomm">
+                        <a href=""><i class="fa-regular fa-comment"></i></a>
+                        <a href=""><i class="fa-solid fa-retweet"></i></a>
+                        <a href=""> <i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                        <a href=""> <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="profileinfo">
+                        <img src="https://banner2.cleanpng.com/20180601/ecy/kisspng-2019-cricket-world-cup-2011-cricket-world-cup-icc-5b112a18b267e5.4857430115278515447308.jpg"
+                            alt="">
+                        <h1>ICC</h1>
+                        <a href="#"><i class="fa-solid fa-check-double"></i></a>
+                        <p>@BCC .</p>
+                        <p>50m</p>
+                    </div>
+                    <div class="mediainfo">
+                        <p>The Code of Conduct breach occurred during the fourth day of <a href="#">#INDvENG</a> first
+                            Test
+                            in Hyderabad 👀
+                            Details 👇</p>
+                    </div>
+                    <div class="profilecontent">
+                        <img src="boom-siraj.jfif" alt="">
+                    </div>
+                    <div class="likecomm">
+                        <a href=""><i class="fa-regular fa-comment"></i></a>
+                        <a href=""><i class="fa-solid fa-retweet"></i></a>
+                        <a href=""> <i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                        <a href=""> <i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hori">
+        </div>
+
+        <!-- ------------------------------ -->
+        <div class="container" id="container3">
+            <form>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <input type="text" placeholder="Search" class="inpute">
+            </form>
+            <div class="subscription">
+                <h2>Subsrcibe to Premium</h2>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <br>
+                <span><a href="#">Subscribe </a></span>
+            </div>
+            <div class="Trending">
+                <div class="whatsTrending">
+                    <h1>What's Happeninig</h1>
+                </div>
+                <div class="Trendingitoms">
+                    <p>Trending in india</p>
+                    <h3>#maratha_Reservation</h3>
+                    <p>5356 posts</p>
+                </div>
+                <div class="Trendingitoms">
+                    <p>Politics ' Trending</p>
+                    <h3>#EknathShinde</h3>
+                    <p>45.2k posts</p>
+                </div>
+                <div class="Trendingitoms">
+                    <p>Sports Trending</p>
+                    <h3>#ViratKohli</h3>
+                    <p>20.5k</p>
+                </div>
+                <div class="Trendingitoms">
+                    <p>Sports Trending</p>
+                    <h3>#IndVsEng</h3>
+                    <p>100k posts</p>
+                </div>
+                <div class="Trendingitoms">
+                    <p>Trending in india</p>
+                    <h3>#RamMandir</h3>
+                    <p>200k posts</p>
+                </div>
+                <a href="#" class="showMore">Show More</a>
+            </div>
+
+            <div class="follow">
+                <div class="whotofollow">
+                    <h1>Who to follow</h1>
+
+                </div>
+                <div class="followitems">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <h3>MongoDB</h3>
+                    <button class="followBt" onclick="follow('a1')" id="a1">Follow</button>
+                </div>
+                <div class="followitems">
+                    <img src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt="">
+                    <h3>Virat Kohli</h3>
+                    <button class="followBt" onclick="follow('a2')" id="a2">Follow</button>
+
+                </div>
+                <div class="followitems">
+                    <img src="https://pbs.twimg.com/profile_images/1700051019525488640/VRqy0bTE_400x400.jpg" alt="">
+                    <h3>Narendra Modi</h3>
+                    <button class="followBt" onclick="follow('a3')" id="a3">Follow</button>
+
+                </div>
+                <a href="#" class="showMore">Show More</a>
+            </div>
+            <footer>
+                <div class="foot1">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">privacy policy</a>
+                    <a href="#">Cookies Policy</a>
+
+                </div>
+                <div class="foot2">
+                    <a href="#">Accessibility</a>
+                    <a href="#">Ads info</a>
+                    <a href="#">more ...</a>
+                    <a href="#">2024 X Corp.</a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ---------------------------------- -->
+
+        <div class="messages" onclick="messageAppear()" id="msg">
+            <div class="iconmsg">
+                <h1>Messages</h1>
+                <i class="fa-solid fa-envelope-open"></i>
+                <i class="fa-solid fa-angles-up" id="angleups"></i>
+            </div>
+            <div class="msgfrm">
+                <img src="https://pbs.twimg.com/profile_images/1700051019525488640/VRqy0bTE_400x400.jpg" alt="">
+                <h3>Narendra_Modi</h3>
+                <i class="fa-solid fa-check-double" id="pp"></i>
+                <p color="white">@narendramodi .</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+
+    let ct = document.getElementById("xy");
+
+    let countlike = 0;
+
+    function one() {
+
+        document.getElementById('two').style.display = 'none';
+        document.getElementById('one').style.display = 'block';
+    }
+
+    function two() {
+        document.getElementById('one').style.display = 'none';
+        document.getElementById('two').style.display = 'block';
+    }
+
+    function count() {
+        if (countlike == 0) {
+            ++countlike;
+            ct.innerHTML = countlike;
+            document.getElementById("zz").style.color = "Red";
+        }
+        else {
+            countlike = 0;
+            ct.innerHTML = countlike;
+            document.getElementById("zz").style.color = "#71767B";
+        }
+    }
+
+    function follow(buttonId) {
+        var button = document.getElementById(buttonId);
+        if (button.textContent === "Follow") {
+            button.textContent = "Following";
+        } else {
+            button.textContent = "Follow";
+        }
+    }
+    var zz = 0;
+    function messageAppear() {
+
+        if (zz == 0) {
+            document.getElementById("msg").style.top = "400px";
+            document.getElementById("angleups").style.transform = "rotate(180deg)";
+            ++zz;
+        }
+        else {
+            document.getElementById("msg").style.top = "730px"
+            document.getElementById("angleups").style.transform = "rotate(360deg)";
+            zz = 0;
+        }
+    }
+    var lg = 0;
+    logout = () => {
+        if (lg == 0) {
+            document.getElementById("log").style.display = 'block';
+            ++lg;
+        }
+        else {
+            document.getElementById("log").style.display = 'none';
+            lg = 0;
+        }
+    }
+
+    document.getElementById("container2").addEventListener('click', function () {
+        document.getElementById("log").style.display = 'none';
+    }
+    );
+</script>
+
+<!-- -------------------------Script ----------------------------------->

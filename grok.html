@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grok</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        body {
+            left: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+            overflow-x: hidden;
+            overflow-y: hidden;
+            box-sizing: border-box;
+        }
+
+        .X-logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        .logo {
+            padding: 5px 20px;
+            margin-left: 80px;
+        }
+
+        .menu {
+            height: 100vh;
+            margin-left: 25%;
+        }
+
+        .NavItoms ul li a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 21px;
+            color: #E7E9EA;
+            font-weight: 500;
+
+        }
+
+        .NavItoms ul li a:hover {
+            font-size: 18px;
+            background-color: rgb(22, 11, 11);
+
+        }
+
+        .NavItoms ul li a i {
+            padding: 0px 10px;
+
+}
+        .NavItoms ul li {
+            list-style: none;
+            /* margin: 35px 0px; */
+            padding: 8px 10px;
+
+        }
+        .NavItoms ul {
+            padding-left: 80px;
+        }
+        .post {
+            width: 230px;
+            height: 50px;
+            border: none;
+            border-radius: 18px;
+            background-color: #1D9BF0;
+            text-align: center;
+            padding: 10px 20px;
+            margin-left: 80px;
+        }
+        .post a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #E7E9EA;
+
+            text-align: center;
+            font-weight: bold;
+            }
+        .profileB {
+            width: 100%;
+            display: flex;
+            gap: 25px;
+            margin-top: 50px;
+            color: white;
+            margin-left: 80px;
+
+        }
+
+        .dp img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        hr {
+            width: 113%;
+            height: 1px;
+            border: none;
+            background-color: #2F3336;
+            left: 0px;
+        }
+
+        .row {
+            /* overflow: auto; */
+            overflow-x: hidden;
+                               
+        }
+        .follow {
+    width: 348px;
+    background-color: #202327;
+    margin-left: 12px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.whotofollow h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.followitems {
+    display: flex;
+    width: 330px;
+    height: 66.25px;
+    padding: 10px 12px;
+    background-color: #202327;
+    justify-content: space-between;
+    color: white;
+}
+
+.followitems:hover {
+    /* font-size: 28px; */
+    background-color: #323334;
+}
+
+.followitems img {
+    border: none;
+    border-radius: 50%;
+}
+
+.followitems h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.followBt {
+    color: black;
+    background-color: #E7E9EA;
+    width: 90px;
+    height: 34px;
+    padding: 0px 16px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#two {
+    display: none;
+}
+
+footer {
+    position: relative;
+    width: 408px;
+    margin-top: 10px;
+}
+
+.foot1 a {
+    text-decoration: none;
+    color: #71767B;
+    line-height: 19px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.foot2 a {
+    text-decoration: none;
+    color: #71767B;
+    line-height: 19px;
+    font-weight: 100;
+    padding: 10px;
+}
+#cont-2{
+    border: none;
+    border-left: 2px solid #2F3336;
+    border-right: 2px solid #2F3336;
+    color: white;
+
+}
+.grok{
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+} 
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 d-md-none d-sm-none d-none d-lg-block">
+                <div class="logo">
+                    <img src="X-logo.jpg" alt="logo" class="X-logo" />
+                </div>
+                <div class="NavItoms ">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="explore.html"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+                        </li>
+                        <li>
+                            <a href="notification.html"><i class="fa-solid fa-bell"></i>Notification</a>
+                        </li>
+                        <li>
+                            <a href="message.html"><i class="fa-regular fa-message"></i> Messages</a>
+                        </li>
+                        <li>
+                            <a href="grok.html"><i class="fa-solid fa-pen-to-square"></i> Grok</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-list"></i>Lists</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-bookmark"></i>Bookmarks</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-user"></i>Communities</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i>Premium</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-comment-dots"></i> More</a>
+                        </li>
+                    </ul>
+                    <div class="post">
+                        <a href="#">Post</a>
+                    </div>
+                    <div class="profileB">
+                        <div class="dp">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFX7iyXhBPjvkOEygJ6z3n7tKVgVBEMHLW1YnsD9fXKYHiQagizHy_36vbXTE500aP8Ys&usqp=CAU"
+                                alt="" class="dp">
+                        </div>
+                        <div class="Username">
+                            <h3>Rohit</h3>
+                            <p>@me_rohit_b</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sd-12 col-xs-12" id="cont-2">
+                     <div class="grok">
+                     <h1 >Coming Soon</h1>
+                     <h2>Stay Tuned.......</h2>
+                    </div>
+
+            </div>
+            <div class="col-lg-3  col-md-4 d-md-none d-sm-none d-none d-lg-block ">
+                <div class="follow">
+                    <div class="whotofollow">
+                        <h1 >Who to follow</h1>
+    
+                    </div>
+                    <div class="followitems">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                        <h3>MongoDB</h3>
+                        <button class="followBt" onclick="follow('a1')" id="a1">Follow</button>
+                    </div>
+                    <div class="followitems">
+                        <img src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt="">
+                        <h3>Virat Kohli</h3>
+                        <button class="followBt" onclick="follow('a2')" id="a2">Follow</button>
+    
+                    </div>
+                    <div class="followitems">
+                        <img src="https://pbs.twimg.com/profile_images/1700051019525488640/VRqy0bTE_400x400.jpg" alt="">
+                        <h3>Narendra Modi</h3>
+                        <button class="followBt" onclick="follow('a3')" id="a3">Follow</button>
+    
+                    </div>
+                    <a href="#" class="showMore">Show More</a>
+                </div>
+                <footer>
+                    <div class="foot1">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">privacy policy</a>
+                        <a href="#">Cookies Policy</a>
+    
+                    </div>
+                    <div class="foot2">
+                        <a href="#">Accessibility</a>
+                        <a href="#">Ads info</a>
+                        <a href="#">more ...</a>
+                        <a href="#">2024 X Corp.</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
